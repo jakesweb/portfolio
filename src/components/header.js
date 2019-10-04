@@ -10,20 +10,26 @@ const StyledHeader = styled.header`
 `
 
 const StyledParagraph = styled.p`
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-align: left;
   justify-self: center;
   margin: 0 auto;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
+`
+
+const StyledSpan = styled.span`
+  font-size: 1.6em;
+  color: #7851a9;
+  font-style: italic;
 `
 
 const Header = ({ siteTitle }) => (
   <StyledHeader>
     <StyledParagraph>
-      Hello! - My name is <span>Jacob</span>
+      Hello! - My name is <StyledSpan>Jacob</StyledSpan>
     </StyledParagraph>
     <StyledParagraph>
-      and I am a <span>developer</span>
+      and I am a <StyledSpan>Developer</StyledSpan>
     </StyledParagraph>
     <StyledParagraph>from Charlotte, NC</StyledParagraph>
   </StyledHeader>

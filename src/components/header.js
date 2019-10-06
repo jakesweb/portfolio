@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => (
       Hello! - My name is <StyledSpan>Jacob</StyledSpan>
     </StyledParagraph>
     <StyledParagraph>
-      and I am a <StyledSpan>Developer</StyledSpan>
+      and I am a <StyledSpan>Web Developer</StyledSpan>
     </StyledParagraph>
     <StyledParagraph>from Charlotte, NC</StyledParagraph>
   </StyledHeader>

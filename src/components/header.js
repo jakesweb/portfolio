@@ -4,9 +4,9 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledHeader = styled.header`
-  padding-left: 15%;
+  padding-left: 20%;
   padding-top: 10%;
-  padding-bottom: 15%;
+  padding-bottom: 5%;
 `
 
 const StyledParagraph = styled.p`

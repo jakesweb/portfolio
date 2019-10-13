@@ -10,7 +10,6 @@ import styled from "styled-components"
 
 const StyledContainer = styled.div`
   width: 200px;
-  height: 200px;
   p {
     text-align: center;
     font-size: 1.2em;

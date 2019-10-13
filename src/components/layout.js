@@ -35,8 +35,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        {/* <footer>© {new Date().getFullYear()}, Jacob Colborn</footer> */}
       </div>
+      <footer>© {new Date().getFullYear()}, Jacob Colborn</footer>
     </>
   )
 }

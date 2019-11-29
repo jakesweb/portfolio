@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { FaGithub } from "react-icons/fa"
+import { FaGithub, FaBlog } from "react-icons/fa"
 import { FaTwitter } from "react-icons/fa"
 import { FaEnvelope } from "react-icons/fa"
 import { FaCodepen } from "react-icons/fa"
@@ -59,6 +59,11 @@ class Contact extends Component {
           <li>
             <a href="https://gitlab.com/jcolborn">
               <FaGitlab color="black" />
+            </a>
+          </li>
+          <li>
+            <a href="https://dev.to/jakesweb">
+              <FaBlog color="black" />
             </a>
           </li>
         </ContactList>

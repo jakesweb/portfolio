@@ -1,12 +1,27 @@
 [
   {
-    "image": "https://res.cloudinary.com/jakes-web/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1560478939/sickfits/ed4ribdtaavisodktany.png",
-    "link": "https://www.google.com",
-    "title": "bike and river"
+    "image": "https://res.cloudinary.com/jakes-web/image/upload/e_outline/v1574999653/portofolio/Pomodoro.png",
+    "link": "https://codepen.io/jakesweb/live/awLdxp",
+    "title": "Pomodoro Clock"
   },
   {
-    "image": "https://res.cloudinary.com/jakes-web/image/upload/v1560476833/sickfits/kn3wixqbege80p1vagnp.png",
-    "link": "https://codepen.io",
-    "title": "ferris wheel"
+    "image": "https://res.cloudinary.com/jakes-web/image/upload/e_outline/v1574999653/portofolio/Calculate.png",
+    "link": "https://codepen.io/jakesweb/live/zzrBJV",
+    "title": "Calculator"
+  },
+  {
+    "image": "https://res.cloudinary.com/jakes-web/image/upload/e_outline/v1574999653/portofolio/Simon_Game.png",
+    "link": "https://codepen.io/jakesweb/live/ZJbKbm",
+    "title": "Simon Game"
+  },
+  {
+    "image": "https://res.cloudinary.com/jakes-web/image/upload/e_outline/v1574999653/portofolio/Tic-Tac-Toe.png",
+    "link": "https://codepen.io/jakesweb/live/ZygVez",
+    "title": "Tic-Tac-Toe"
+  },
+  {
+    "image": "https://res.cloudinary.com/jakes-web/image/upload/e_outline/v1574999652/portofolio/Wikipedia_Portal.png",
+    "link": "https://codepen.io/jakesweb/live/jmGgoY",
+    "title": "Wikipedia Portal"
   }
 ]

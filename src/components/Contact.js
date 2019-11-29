@@ -10,7 +10,7 @@ const ContactList = styled.ul`
   margin-top: 25px;
   list-style: none;
   font-size: 1.9em;
-  width: 50%;
+  width: 85%;
   text-align: center;
   padding-bottom: 10px;
   padding-top: 25px;
@@ -28,7 +28,7 @@ const EndParagraph = styled.p`
   text-align: center;
   margin-top: -10px;
   padding-left: 65px;
-  width: 50%;
+  width: 85%;
 `
 
 class Contact extends Component {
@@ -37,7 +37,7 @@ class Contact extends Component {
       <div>
         <ContactList>
           <li>
-            <a href="https://www.github.com/jcolborn-dropdeadgames">
+            <a href="https://www.github.com/jakesweb">
               <FaGithub color="black" />
             </a>
           </li>

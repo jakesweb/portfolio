@@ -4,9 +4,15 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledHeader = styled.header`
-  padding-left: 20%;
   padding-top: 10%;
-  padding-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+const ParagraphDiv = styled.div`
+  margin-right: 10px;
+  padding-right: 10px;
 `
 
 const StyledParagraph = styled.p`
@@ -23,15 +29,33 @@ const StyledSpan = styled.span`
   font-style: italic;
 `
 
+const ImageDiv = styled.div`
+  width: 12em;
+  float: right;
+  padding-bottom: 5%;
+  img {
+    border-radius: 50%;
+  }
+`
+
 const Header = ({ siteTitle }) => (
   <StyledHeader>
-    <StyledParagraph>
-      Hello! - My name is <StyledSpan>Jacob</StyledSpan>
-    </StyledParagraph>
-    <StyledParagraph>
-      and I am a <StyledSpan>Web Developer</StyledSpan>
-    </StyledParagraph>
-    <StyledParagraph>from Charlotte, NC</StyledParagraph>
+    <ParagraphDiv>
+      <StyledParagraph>
+        Hello! - My name is <StyledSpan>Jacob</StyledSpan>
+      </StyledParagraph>
+      <StyledParagraph>
+        and I am a <StyledSpan>Web Developer</StyledSpan>
+      </StyledParagraph>
+      <StyledParagraph>from Charlotte, NC</StyledParagraph>
+      <StyledParagraph>You can find some of my projects below!</StyledParagraph>
+    </ParagraphDiv>
+    <ImageDiv>
+      <img
+        src="https://res.cloudinary.com/jakes-web/image/upload/r_30/v1561317194/portofolio/jacob-headshot.jpg"
+        alt="Jacob's Headshot"
+      />
+    </ImageDiv>
   </StyledHeader>
 )
 

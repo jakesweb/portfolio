@@ -42,9 +42,9 @@ function getProjectsList(data) {
 
 const Project = ({ children }) => (
   <HeaderDiv>
-    <div className="header-div">
+    {/* <div className="header-div">
       <h1>My Projects</h1>
-    </div>
+    </div> */}
     <StaticQuery
       query={graphql`
         query ProjectItemQuery {

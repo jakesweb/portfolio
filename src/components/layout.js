@@ -9,7 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Nav from "./Nav"
+import Footer from "./Footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -25,7 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Nav />
       <div
         style={{
           margin: `0 auto`,
@@ -36,6 +37,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
       </div>
+      <Footer />
     </>
   )
 }

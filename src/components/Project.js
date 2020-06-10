@@ -4,26 +4,19 @@ import styled from "styled-components"
 
 import ProjectItem from "./ProjectItem"
 
-const HeaderDiv = styled.div`
-  .header-div {
-    padding-left: 19%;
-  }
-  h1 {
-    font-size: 2.1em;
-    font-weight: 600;
-    color: #7851a9;
-  }
-`
-
 const ProjectGrid = styled.div`
-  height: 100%;
-  width: 100%;
+  width: 85%;
   display: grid;
+  grid-gap: 3.5rem;
   grid-template-columns: repeat(3, 2fr);
-  grid-gap: 15px;
   justify-content: center;
-  align-items: baseline;
-  margin: auto;
+  align-items: center;
+  margin: 0 auto !important;
+  img {
+    padding-bottom: 5%;
+    max-width: 100%;
+    box-sizing: inherit;
+  }
 `
 
 function getProjectsList(data) {
@@ -41,7 +34,7 @@ function getProjectsList(data) {
 }
 
 const Project = ({ children }) => (
-  <HeaderDiv>
+  <>
     {/* <div className="header-div">
       <h1>My Projects</h1>
     </div> */}
@@ -61,7 +54,7 @@ const Project = ({ children }) => (
       `}
       render={data => <ProjectGrid>{getProjectsList(data)}</ProjectGrid>}
     />
-  </HeaderDiv>
+  </>
 )
 
 export default Project

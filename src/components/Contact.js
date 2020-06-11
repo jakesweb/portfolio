@@ -2,17 +2,7 @@ import React, { Component } from "react"
 import styled from "styled-components"
 import { navigateTo } from "gatsby"
 
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&")
-}
-
-const HeaderText = styled.h1`
-  text-align: center;
-`
-
-const StyledForm = styled.form`
+const StyledDiv = styled.div`
   text-align: center;
   label {
     display: block;
@@ -32,20 +22,24 @@ const StyledForm = styled.form`
     margin-top: 15px;
   }
 `
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
 
-class Contact extends Component {
+class Contact extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
   }
 
   handleChange = e => {
-    console.log(this.state)
     this.setState({ [e.target.name]: e.target.value })
   }
 
   handleSubmit = e => {
-    e.preventdefault()
+    e.preventDefault()
     const form = e.target
     fetch("/", {
       method: "POST",
@@ -58,42 +52,48 @@ class Contact extends Component {
       .then(() => navigateTo(form.getAttribute("action")))
       .catch(error => alert(error))
   }
+
   render() {
     return (
-      <div>
-        <HeaderText>
-          Feel free to contact me with any questions or opprotunities. Thank
-          you!
-        </HeaderText>
-        <StyledForm
+      <StyledDiv>
+        <h1>
+          Feel free to send me a message about any questions or opportunities.
+          Thank you!
+        </h1>
+        <form
           name="contact"
+          method="post"
+          action="/thanks/"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          action="/thanks"
-          method="post"
           onSubmit={this.handleSubmit}
         >
+          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+          <input type="hidden" name="form-name" value="contact" />
           <p hidden>
             <label>
-              Dont' Fill this out
+              Don’t fill this out:{" "}
               <input name="bot-field" onChange={this.handleChange} />
             </label>
           </p>
           <p>
             <label>
-              Name
+              Your name:
+              <br />
               <input type="text" name="name" onChange={this.handleChange} />
             </label>
           </p>
           <p>
             <label>
-              Email
+              Your email:
+              <br />
               <input type="email" name="email" onChange={this.handleChange} />
             </label>
           </p>
           <p>
             <label>
-              Message
+              Message:
+              <br />
               <textarea
                 name="message"
                 cols="30"
@@ -102,13 +102,13 @@ class Contact extends Component {
               />
             </label>
           </p>
-          <br />
-          <button type="submit" name="submit" id="submit">
-            Contact
-          </button>
-        </StyledForm>
-      </div>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </StyledDiv>
     )
   }
 }
+
 export default Contact

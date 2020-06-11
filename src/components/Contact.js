@@ -13,7 +13,8 @@ const StyledForm = styled.form`
     font-size: 2.2rem;
   }
   input,
-  textarea {
+  textarea,
+  button {
     display: block;
     margin: 0 auto !important;
     border-radius: 5px;
@@ -44,7 +45,9 @@ const Contact = () => (
         <textarea name="message" cols="30" rows="10" />
       </label>
       <br />
-      <input type="submit" value="Contact" name="submit" id="submit" />
+      <button type="submit" name="submit" id="submit">
+        Contact
+      </button>
     </StyledForm>
   </div>
 )

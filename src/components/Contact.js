@@ -30,7 +30,7 @@ const Contact = () => (
     <HeaderText>
       Feel free to contact me with any questions or opprotunities. Thank you!
     </HeaderText>
-    <StyledForm name="contact" netlify>
+    <StyledForm name="contact" data-netlify="true">
       <label>
         Name
         <input type="text" name="name" />

@@ -40,6 +40,7 @@ class Contact extends Component {
   }
 
   handleChange = e => {
+    console.log(this.state)
     this.setState({ [e.target.name]: e.target.value })
   }
 
@@ -78,23 +79,29 @@ class Contact extends Component {
               <input name="bot-field" onChange={this.handleChange} />
             </label>
           </p>
-          <label>
-            Name
-            <input type="text" name="name" onChange={this.handleChange} />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" onChange={this.handleChange} />
-          </label>
-          <label>
-            Message
-            <textarea
-              name="message"
-              cols="30"
-              rows="10"
-              onChange={this.handleChange}
-            />
-          </label>
+          <p>
+            <label>
+              Name
+              <input type="text" name="name" onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Email
+              <input type="email" name="email" onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message
+              <textarea
+                name="message"
+                cols="30"
+                rows="10"
+                onChange={this.handleChange}
+              />
+            </label>
+          </p>
           <br />
           <button type="submit" name="submit" id="submit">
             Contact
